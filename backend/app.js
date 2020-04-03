@@ -2,6 +2,9 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const router = require('./router')
+const path = require('path')
+const dist = path.join(__dirname, 'dist')
+
 mongoose.connect(
   'mongodb://localhost/events-db',
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
@@ -31,6 +34,11 @@ expressServer.use((req, res, next) => {
 })
 
 expressServer.use('/api', router)
+expressServer.use('/', express.static(dist))
+
+expressServer.get('*', function(req, res) {
+  res.sendFile(path.join(dist, 'index.html'))
+})
 
 
 expressServer.listen(8000)

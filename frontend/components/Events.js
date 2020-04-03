@@ -79,7 +79,7 @@ class Events extends React.Component {
   fetchLiveGames() {
     axios
       .get(
-        'https://api.pandascore.co/lives?token=1wCqgz0G63stMjHHwN0Bn2itQVq1z2Pc7szHZNR4MHpGWqkDy5o'
+        'https://api.pandascore.co/lives?token=PTOdMQX5q1aTMgeZg2RjLCJSaCeKbR-Xd_I_03Ji54rupsj_jJE'
       )
       .then(res => {
         console.log(res.data)
