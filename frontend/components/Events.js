@@ -79,7 +79,7 @@ class Events extends React.Component {
   fetchLiveGames() {
     axios
       .get(
-        'https://api.pandascore.co/lives?token=PTOdMQX5q1aTMgeZg2RjLCJSaCeKbR-Xd_I_03Ji54rupsj_jJE'
+        'https://api.pandascore.co/lives?token=1wCqgz0G63stMjHHwN0Bn2itQVq1z2Pc7szHZNR4MHpGWqkDy5o'
       )
       .then(res => {
         console.log(res.data)
@@ -88,34 +88,28 @@ class Events extends React.Component {
       .catch(error => console.error(error))
   }
   componentDidMount() {
-    // console.log(this.props.location.state)
-    // if (this.props.location.state === null) {
-    //   console.log('null state')
-      
-    // }
-    this.fetchAllGames()
-    //  else if (this.props.location.state !== null && this.props.location.state.currentSelection !== null){
+    if (!this.props.location.state) {
+      this.fetchAllGames()
+    } else if (this.props.location.state !== null && this.props.location.state.currentSelection !== null) {
 
-    //   console.log(this.props.location.state)
-    //   const currentState = this.props.location.state.currentSelection
-    //   console.log(currentState)
+      console.log(this.props.location.state)
+      const currentState = this.props.location.state.currentSelection
+      console.log(currentState)
 
-    //   if (currentState === 'Games') {
-    //     console.log('selected Games')
-    //     this.fetchAllGames()
-    //   } else if (currentState === 'Leagues'){
-    //     this.fetchLeagues()
+      if (currentState === 'Games') {
+        console.log('selected Games')
+        this.fetchAllGames()
+      } else if (currentState === 'Leagues') {
+        this.fetchLeagues()
 
-    //   } else if (currentState === 'LocalEvents'){
-    //     this.fetchLocalEvents()
-      
-    //   } else if (currentState === 'LiveGames'){
-    //     this.fetchLiveGames()
-    //   }
+      } else if (currentState === 'LocalEvents') {
+        this.fetchLocalEvents()
 
-    // }
+      } else if (currentState === 'LiveGames') {
+        this.fetchLiveGames()
+      }
+    }
   }
-
   handleLocalEvents() {
     this.fetchLocalEvents()
   }
