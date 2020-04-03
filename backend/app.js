@@ -4,9 +4,10 @@ const mongoose = require('mongoose')
 const router = require('./router')
 const path = require('path')
 const dist = path.join(__dirname, 'dist')
+const { dbURI, port }  = require('./config/environment')
 
 mongoose.connect(
-  'mongodb://localhost/events-db',
+  dbURI,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
   
   err => {
@@ -41,4 +42,4 @@ expressServer.get('*', function(req, res) {
 })
 
 
-expressServer.listen(8000)
+expressServer.listen(port)
