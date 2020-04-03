@@ -50,7 +50,7 @@ class Events extends React.Component {
     console.log('Fetching leagues')
     axios
       .get(
-        'https://api.pandascore.co/series?token=PTOdMQX5q1aTMgeZg2RjLCJSaCeKbR-Xd_I_03Ji54rupsj_jJE'
+        'https://cors-anywhere.herokuapp.com/https://api.pandascore.co/series?token=PTOdMQX5q1aTMgeZg2RjLCJSaCeKbR-Xd_I_03Ji54rupsj_jJE'
       )
       .then(res => {
         this.setState({ leagues: res.data, currentSelection: 'Leagues' })
@@ -79,7 +79,7 @@ class Events extends React.Component {
   fetchLiveGames() {
     axios
       .get(
-        'https://api.pandascore.co/lives?token=PTOdMQX5q1aTMgeZg2RjLCJSaCeKbR-Xd_I_03Ji54rupsj_jJE'
+        'https://cors-anywhere.herokuapp.com/https://api.pandascore.co/lives?token=PTOdMQX5q1aTMgeZg2RjLCJSaCeKbR-Xd_I_03Ji54rupsj_jJE'
       )
       .then(res => {
         console.log(res.data)
