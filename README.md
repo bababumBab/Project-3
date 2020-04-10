@@ -44,7 +44,7 @@ In the context of being confined to staying indoors people are looking for ways 
 
 ## Wireframe
 
-![Image of wireframe](https://github.com/bababumBab/Project-3/blob/master/frontend/images/_Entity%20Relationship%20Diagram%20Example%20(UML%20Notation).jpeg)
+![Image of wireframe](https://github.com/bababumBab/Project-3/blob/master/frontend/images/wireframe.jpeg)
 
 
 ## Approach
