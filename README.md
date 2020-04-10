@@ -18,25 +18,45 @@ In the context of being confined to staying indoors people are looking for ways 
 - HTML6
 - SCSS
 - JavaScript (ES6)
-- React.js
-- Express
-- Mongo and Mongoose
+- NPM (package management)
+- Node.js
+- Express (JS Framework)
+- Mongo and Mongoose (Database and Database manipulation)
+- Insomnia (testing APIs)
 - React 
 - Moment
 - Git and GitHub
+- Heroku
 - Bulma and Bulma Calendar
 - Google Fonts
 - LucidChart - for creating wireframes of the project
 - Trello for project management
 
+## Structure
+  The project will be structured in:
+- Building the API routes with express
+- Modeling data for the API
+- Communicating with Mongo through Mongoose
+- Finalizing and testing the API
+- Creating the frontend components using React
+- Styling the components to create a user friendly and consolidated experience
+- Deploying the app using Heroku
+
+## Wireframe
+
+![Image of wireframe](src=frontend/images/_Entity Relationship Diagram Example (UML Notation).jpeg)
+
+
 ## Approach
 
-Create a functional backend that can store events, usernames and password. Connect the backend with a simplified frontend and build upon creating multiple React components that render new content by changing state on the main 'Hub" page.
+Create a functional backend that can store events, usernames and passwords. Connect the backend with an initially simplified frontend and build upon creating multiple React components that render new content by changing state on the main 'Hub" page.
 
-We tried to work in an agile manner by getting small functionalities working as quick as possible in order to be easy to change 
-and improve the functionality of the app. 
+We tried to work in an agile manner by getting small functionalities working as quick as possible to give us a quick overview of how the app should function and to be able to adjust to different challenges along the way. 
 
-Our aim was to make things easier for people to find new sources of eSports online.
+Our main aim was to create something that will make things easier for people to find in one place all the sources of eSports - from proffesional gaming leagues to streamers.
+
+
+
 
 
 First step was to create a functional database and connect to it using Mongoose.
