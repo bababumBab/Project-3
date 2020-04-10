@@ -289,6 +289,8 @@ Building a robust and an appealing frontend was from the start one of the main g
 ## Challenges
 
 - Biggest challenge was to work on the most complex component of the project - Hub Page. We assigned different features amongst the team. Putting together all of our code was the more interesting and rewarding challenge, but a challenge not to be repeated.
+- Manipulating the limited data received from the FACEIT API in order to create some valuable content for our app.
+- Finding another suitable API to work alongside the FACEIT API. 
 
 
 
@@ -296,7 +298,8 @@ Building a robust and an appealing frontend was from the start one of the main g
 - Creating working authentification for users, storing in the backend database created on Mondodb.
 - Making a unified design across all pages, following the general theme of a gaming environment. 
 - Being able to render different states on the Hub page without changing actually the page.
-- Developing the ability to work together as a team.
+- Developing the ability to work together as a team in a very short time.
+- Deployed the project succesfully on Heroku and learned on how to manage the app via Heroku.
 
 ## Potential future features
 
