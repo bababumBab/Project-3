@@ -33,7 +33,7 @@ In the context of being confined to staying indoors people are looking for ways 
 - Trello for project management
 
 ## Structure
-- The project will be structured in:
+The project will be structured in:
 - Building the API routes with express
 - Modeling data for the API
 - Communicating with Mongo through Mongoose
@@ -42,7 +42,7 @@ In the context of being confined to staying indoors people are looking for ways 
 - Styling the components to create a user friendly and consolidated experience
 - Deploying the app using Heroku
 
-## Wireframe
+## Wireframe
 ![Image of wireframe](https://github.com/bababumBab/Project-3/blob/master/frontend/images/wireframe.jpeg)
 
 
